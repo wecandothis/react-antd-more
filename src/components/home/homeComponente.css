@@ -1,0 +1,19 @@
+.home-containe{
+	margin-top: 150px;
+}
+.home-containe-text h1{
+	text-align: center;
+}
+.home-containe-ul {
+	list-style: none;
+
+}
+.home-containe-ul li{
+	display: inline-block;
+	width: 20%;
+	margin-left: 4%;
+}
+.home-containe-img{
+	width: 90%;
+	height: 200px;
+}

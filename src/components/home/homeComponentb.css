@@ -1,0 +1,29 @@
+.home-containb{
+	width: 100%;
+    margin-top: 50px;
+}
+
+.home-containb-img{
+	width: 50%;	
+	display: inline-block;
+	position:absolute;
+}
+.home-containb-img img{
+	position: absolute;
+	width: 60%;
+	left: 10%
+}
+.home-containb-text{
+	width: 40%;
+	display: inline-block;
+	position: absolute;
+	right: 0
+}
+.home-containb-text h2{
+	margin-top: 50px;
+	width: 80%;
+}
+.home-containb-text p{
+   width: 80%;
+
+}

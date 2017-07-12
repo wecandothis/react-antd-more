@@ -1,0 +1,29 @@
+.home-containd{
+	width: 100%;
+    margin-top: 150px;
+}
+
+.home-containd-img{
+	width: 50%;	
+	display: inline-block;
+	position:absolute;
+}
+.home-containd-img img{
+	position: absolute;
+	width: 60%;
+	left: 10%
+}
+.home-containd-text{
+	width: 40%;
+	display: inline-block;
+	position: absolute;
+	right: 0
+}
+.home-containd-text h2{
+	margin-top: 50px;
+	width: 80%;
+}
+.home-containd-text p{
+   width: 80%;
+
+}

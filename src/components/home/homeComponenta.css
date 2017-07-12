@@ -1,0 +1,25 @@
+.home-containa{
+	width: 100%;
+	background-image: url("./../../images/bgmv.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 90%;
+
+}
+.home-containa-text h2{
+
+	position: relative;
+}
+.home-containa-text ul{
+	margin-top: 150px;
+	position: relative;
+	list-style: none;
+	font-size: 26px;
+	
+}
+.home-containa-text ul li{
+	text-align: center;
+}
+.home-containa-img {
+  text-align: center;
+}

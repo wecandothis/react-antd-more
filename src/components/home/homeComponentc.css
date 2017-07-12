@@ -1,0 +1,31 @@
+.home-containc{
+	width: 100%;
+	margin-top: 150px;
+}
+.home-containc-img{
+	width: 50%;	
+	display: inline-block;
+	position:absolute;
+	right: 0
+}
+.home-containc-img img{
+	position: absolute;
+	width: 60%;
+	right: 20%;
+
+}
+.home-containc-text{
+	width: 40%;
+	display: inline-block;
+	position: absolute;
+	left: 5%;
+	
+}
+.home-containc-text h2{
+	margin-top: 50px;
+	width: 80%;
+}
+.home-containc-text p{
+   width: 80%;
+
+}
