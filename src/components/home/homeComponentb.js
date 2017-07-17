@@ -4,10 +4,12 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim'; 
 import TweenOne from "rc-tween-one"
 import li3 from "./../../images/li3.jpg"
+import {Link} from "react-router-dom"
 export default class Componentb extends Component{
 	render(){
       return <OverPack className="home-containb" id="home-containb" component="div" replay={true} style={{height:this.props.currentheight}}>
-                <TweenOne className="home-containb-img">
+                <Link to="/about/3">
+          <TweenOne className="home-containb-img">
                    <img src={li3} alt="img" />
 
                 </TweenOne>
@@ -21,6 +23,8 @@ export default class Componentb extends Component{
 
 
 
+
+                </Link>
 
              </OverPack>
 
