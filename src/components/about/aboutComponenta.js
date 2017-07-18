@@ -12,20 +12,25 @@ import li6 from "./../../images/li6.jpg"
 import li7 from "./../../images/li7.jpg"
 import li8 from "./../../images/li8.jpg"
 import li9 from "./../../images/li9.jpg"
+import aboutdata from "./../../data/aboutdata.json"
 export default class Componenta extends Component{
 
    getanimationdata=(e)=>{
          const index=e.index;
-         const delay = index % 4 * 100 + Math.floor(index / 4) * 100 + 300;
+         const delay = Math.random()*1000 + 300;
          return { y: '+=30', opacity: 0, type: 'from', delay };
 
    }
-    getChildtorender=(item)=>{
+    getChildtorender=(item,index)=>{
   	return (<li key={item.index} >
   	            <Link to={`/about/${item.index}`}>
 	             <div>
 	                 <span><img className="home-containe-img" src={item.img} alt=" "/></span>
-	                 <p>{item.content}</p>
+	                 <TweenOne component="h3">
+                    {aboutdata[item.index].title}
+
+
+                   </TweenOne>
 	             </div>
                 </Link>
           
@@ -34,15 +39,15 @@ export default class Componenta extends Component{
   }
     render(){
     	const dataAarry=[
-    	{img:li1,content:"test1",index:"1"},
-    	{img:li2,content:"test2",index:"2"},
-    	{img:li3,content:"test3",index:"3"},
-    	{img:li4,content:"test4",index:"4"},
-    	{img:li5,content:"test5",index:"5"},
-    	{img:li6,content:"test6",index:"6"},
-    	{img:li7,content:"test7",index:"7"},
-    	{img:li8,content:"test8",index:"8"},
-    	{img:li9,content:"test9",index:"9"}
+    	{img:li1,index:"1"},
+    	{img:li2,index:"2"},
+    	{img:li3,index:"3"},
+    	{img:li4,index:"4"},
+    	{img:li5,index:"5"},
+    	{img:li6,index:"6"},
+    	{img:li7,index:"7"},
+    	{img:li8,index:"8"},
+    	{img:li9,index:"9"}
     	]
         const childgorender=dataAarry.map(this.getChildtorender)
     	return (  <QueueAnim className="about-containa">
@@ -50,7 +55,7 @@ export default class Componenta extends Component{
                       <h3>this is demo </h3>
                      </TweenOne>
 
-                     <TweenOneGroup component="ul" enter={(e)=>{return this.getanimationdata(e)}} leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}>
+                     <TweenOneGroup className="about-containa-ul" component="ul" enter={(e)=>{return this.getanimationdata(e)}} leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}>
 
                        {childgorender}
 

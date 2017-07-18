@@ -1,9 +1,10 @@
 .home-containa{
-	width: 100%;
-	background-image: url("./../../images/bgmv.png");
+	width: 100%;	
 	background-size: contain;
+	background-image: url("./../../images/bgmv.png");
 	background-repeat: no-repeat;
 	background-position: 90%;
+
 
 }
 .home-containa-text h2{

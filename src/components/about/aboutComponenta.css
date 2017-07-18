@@ -1,7 +1,27 @@
 .about-containa{
 	width: 100%;
-
+    margin-top: 50px;
 }
+
 .about-containa-text h3{
 	text-align: center;
 }
+.about-containa-ul{
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.about-containa-ul li{
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	margin-top: 20px;
+
+}
+.about-containa-ul li span img{
+	width: 80%;
+}
+
+
+

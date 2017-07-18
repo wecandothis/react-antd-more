@@ -5,6 +5,7 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from "rc-tween-one"
 import li5 from "./../../images/li5.jpg"
 import {Link} from "react-router-dom"
+import homedata from "./../../data/homedata.json"
 export default class Componentd extends Component{
 	render(){
       return <OverPack className="home-containd" id="home-containd" component="div" replay={true} style={{height:this.props.currentheight}}>
@@ -13,8 +14,8 @@ export default class Componentd extends Component{
 
               <QueueAnim className="home-containd-text" type={['left','right']}>
                  
-                  <h2> 爱你就像爱生命</h2>
-                  <p> 我把我整个灵魂都给你，连同它的怪癖，耍小脾气，忽明忽暗，一千八百种坏毛病.</p>
+                  <h2>{homedata.componentd.title}</h2>
+                  <p>{homedata.componentd.content} </p>
 
                 </QueueAnim>
                   <TweenOne className="home-containd-img">

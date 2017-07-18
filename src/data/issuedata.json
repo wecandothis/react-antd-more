@@ -1,0 +1,30 @@
+{
+	
+	"1":{
+		"question":"此项目的用到哪些技术栈呢？",
+		"anwser":"webpack，react，react-router，等等。",
+		"other":""
+	},
+	"2":{
+		"question":"此项目是怎么进行的数据相互的呢？",
+		"anwser":"此项目不包括后台数据，所以数据来源来自于src目录下的data文件",
+		"other":""
+	},
+	"3":{
+		"question":"此项目有哪些优点与不足的地方呢？",
+		"anwser":"..........",
+		"other":""
+	},
+	"4":{
+		"question":"",
+		"anwser":"",
+		"other":""
+	},
+	"5":{
+		"question":"",
+		"anwser":"",
+		"other":""
+	}
+
+
+}

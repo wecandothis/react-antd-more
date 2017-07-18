@@ -1,0 +1,16 @@
+  {  
+  	"annotation":{
+            "1":"公共数据",
+            "2":"方便修改与编辑"
+            },
+	"header":{
+		"title":"I like you all the time "
+	},
+	"footer":{
+	    "linkData":[    {"name":"蚂蚁动效","href":"https://motion.ant.design"},
+					    {"name":"阿里图库","href":"https://motion.ant.design"},
+					    {"name":"蚂蚁组件","href":"https://motion.ant.design"}]
+
+	              }
+
+	}

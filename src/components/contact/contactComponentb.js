@@ -3,9 +3,10 @@
 
 import React,{Component} from "react"
 import "./contactComponentb.css"
+import contactdata from  "./../../data/contactdata.json"
 export default class Componentb extends Component{
 	render(){
-       return <h2>this is test 2</h2>
+       return <h2>{contactdata.data}</h2>
 
 	}
 }
