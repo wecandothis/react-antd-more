@@ -11,14 +11,39 @@ const Footer=()=>{
   
  return (
            <div className="Footer">
-              
-            
-             <h2>相关链接</h2>
-             <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
-             <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
-             <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
+              <ul>
+                 <li>
+                      <h2>相关链接</h2>
+                       <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
+                       <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
+                       <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
              
-             <h2> Copyright © 2017 The Project by feng.</h2>
+
+                 </li>
+                 <li>
+                     <h2>相关链接</h2>
+                       <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
+                       <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
+                       <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
+             
+
+
+                 </li>
+                  <li>
+                     <h2>相关链接</h2>
+                       <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
+                       <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
+                       <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
+             
+
+
+                 </li>
+
+
+              </ul>
+            
+             
+             <h3 className="footer-contain-bottom"> Copyright © 2017 The Project by feng.</h3>
 
 
            </div>

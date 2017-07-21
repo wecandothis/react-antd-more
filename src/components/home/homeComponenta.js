@@ -5,7 +5,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import homedata from "./../../data/homedata.json"
 import jiantou from "./../../images/jiantou.png"
 import "./homeComponenta.css"
-
+  
 
 
 export default class Componenta extends Component{

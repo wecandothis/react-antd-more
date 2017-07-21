@@ -11,7 +11,14 @@
 .home-containd-img img{
 	position: absolute;
 	width: 60%;
-	left: 10%
+	left: 10%;
+	box-shadow: 5px 5px 5px gray;
+}
+.home-containd-img img:hover{
+	
+	
+	transform:scale(1.05) 
+
 }
 .home-containd-text{
 	width: 40%;

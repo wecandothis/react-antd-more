@@ -12,16 +12,20 @@ export default class Componentd extends Component{
               
                <Link to="/about/5">
 
-              <QueueAnim className="home-containd-text" type={['left','right']}>
+              <QueueAnim  type={['left','right']}>
                  
-                  <h2>{homedata.componentd.title}</h2>
+               <TweenOne className="home-containd-text" animation={{x:30,type:'from',opacity:0,duration:1000}}>
+                    <h2>{homedata.componentd.title}</h2>
                   <p>{homedata.componentd.content} </p>
 
-                </QueueAnim>
-                  <TweenOne className="home-containd-img">
+                </TweenOne>
+                   <TweenOne className="home-containd-img" animation={{x:-30,type:'from',opacity:0,duration:1000}}>
                    <img src={li5} alt="img" />
 
                 </TweenOne>
+
+                </QueueAnim>
+                
 
 
 

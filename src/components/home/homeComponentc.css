@@ -12,6 +12,12 @@
 	position: absolute;
 	width: 60%;
 	right: 20%;
+	box-shadow: 5px 5px 5px gray;
+
+}.home-containc-img img:hover{
+	
+	
+	transform:scale(1.05) 
 
 }
 .home-containc-text{

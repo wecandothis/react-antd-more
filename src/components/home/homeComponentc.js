@@ -11,16 +11,19 @@ export default class Componentc extends Component{
       return <OverPack className="home-containc" id="home-containc" component="div" replay={true} style={{height:this.props.currentheight}}>
               
                     <Link to="/about/4">
-                       <QueueAnim className="home-containc-text" type={['left','right']}>
-                 
+         <QueueAnim  type={['left','right']}>
+                    <TweenOne className="home-containc-text"  animation={{x:-30,duration:1000, type:"from",opacity:0}}>
+                  
                   <h2>{homedata.componentc.title}</h2>
                   <p> {homedata.componentc.content}</p>
-
-                </QueueAnim>
-                  <TweenOne className="home-containc-img">
+                </TweenOne>
+                   <TweenOne className="home-containc-img" animation={{x:30,duration:1000, type:"from",opacity:0}}>
                    <img src={li4} alt="img" />
 
                 </TweenOne>
+
+         </QueueAnim>
+                
 
 
                     </Link>

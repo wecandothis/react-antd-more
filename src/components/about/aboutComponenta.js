@@ -25,7 +25,7 @@ export default class Componenta extends Component{
   	return (<li key={item.index} >
   	            <Link to={`/about/${item.index}`}>
 	             <div>
-	                 <span><img className="home-containe-img" src={item.img} alt=" "/></span>
+	                 <span><img className="about-containe-img" src={item.img} alt=" "/></span>
 	                 <TweenOne component="h3">
                     {aboutdata[item.index].title}
 
