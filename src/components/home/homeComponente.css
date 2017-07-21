@@ -27,3 +27,39 @@
 	border: 1px solid black;
 	color: black;
 }
+/*
+   屏幕分辨率在760px下的css属性，media属性只支持ie9
+*/
+@media (max-width:760px){
+ .home-containe{
+
+	text-align: center;
+	
+}
+.home-containe-text h1{
+	text-align: center;
+}
+
+.home-containe-ul li{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	margin-top: 15px;
+}
+.home-containe-img{
+	width: 85%;
+	height: 100px;
+	 border:2px solid white;
+	border-radius: 10px;
+}
+.home-containe-button{
+	margin-top: 10px;
+	font-size: 10px;
+	padding: 4px;
+	background: white;
+	border: 1px solid black;
+	color: black;
+}
+
+
+}

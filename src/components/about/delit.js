@@ -9,6 +9,7 @@ import li7 from "./../../images/li7.jpg"
 import li8 from "./../../images/li8.jpg"
 import li9 from "./../../images/li9.jpg"
 import aboutdata from "./../../data/aboutdata.json"
+import "./delit.css"
 export default class Delit extends Component{
 	render(){
 

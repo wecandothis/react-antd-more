@@ -34,3 +34,41 @@
    width: 80%;
 
 }
+/*
+   屏幕分辨率在760px下的css属性，media属性只支持ie9
+*/
+@media (max-width:760px) {
+.home-containd{
+	width: 100%;
+    margin-top: 20px;
+}
+
+.home-containd-img{
+	width: 40%;	
+	display: inline-block;
+	position:absolute;
+}
+.home-containd-img img{
+	position: absolute;
+	width: 100%;
+
+	box-shadow: 5px 5px 5px gray;
+}
+	
+
+.home-containd-text{
+	width: 50%;
+	display: inline-block;
+	position: absolute;
+	right: 0
+}
+.home-containd-text h2{
+	margin-top: 10px;
+	width: 80%;
+}
+.home-containd-text p{
+   width: 80%;
+
+}
+}
+   

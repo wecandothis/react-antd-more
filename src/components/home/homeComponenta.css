@@ -25,3 +25,39 @@
 .home-containa-img {
   text-align: center;
 }
+/*
+   屏幕分辨率在760px下的css属性，media属性只支持ie9
+*/
+@media (max-width:760px) {
+.home-containa{
+	width: 100%;	
+	background-size: contain;
+	background-image: url("./../../images/bgmv.png");
+	background-repeat: no-repeat;
+	background-position: 90%;
+
+
+}
+.home-containa-text h2{
+
+	position: relative;
+	top: 10px;
+	
+}
+.home-containa-text ul{
+	margin-top: 350px;
+	position: relative;
+	list-style: none;
+	font-size: 16px;
+	
+	
+}
+.home-containa-text ul li{
+	text-align: center;
+}
+.home-containa-img {
+  text-align: center;
+ 
+}
+	
+}
