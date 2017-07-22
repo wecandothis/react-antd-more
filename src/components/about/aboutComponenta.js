@@ -1,8 +1,15 @@
+/*
+   1.本组件以为有Math.rando()，每次的值不一样就不需要优化。
+
+*/
+
+
+
 import React,{Component} from 'react'
 import "./aboutComponenta.css"
 import QueueAnim from "rc-queue-anim"
 import TweenOne,{TweenOneGroup} from "rc-tween-one"
-import {HashRouter as Router,Link,Route} from "react-router-dom"
+import {Link} from "react-router-dom"
 import li1 from "./../../images/li1.jpg"
 import li2 from "./../../images/li2.jpg"
 import li3 from "./../../images/li3.jpg"
@@ -16,7 +23,6 @@ import aboutdata from "./../../data/aboutdata.json"
 export default class Componenta extends Component{
 
    getanimationdata=(e)=>{
-         const index=e.index;
          const delay = Math.random()*1000 + 300;
          return { y: '+=30', opacity: 0, type: 'from', delay };
 
