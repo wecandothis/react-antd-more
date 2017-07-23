@@ -2,11 +2,28 @@ import React, { Component } from 'react';
 import {HashRouter as Router,Route} from "react-router-dom"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
+import Bundle from "./bundle"
 import Home from "./contains/home"
-import About from "./contains/about"
-import Contact from "./contains/contact"
-import Issue from "./contains/issue"
-import Delit from "./components/about/delit"
+const About = () => (
+  <Bundle load={()=>import('./contains/about')}>
+    {(About) => <About  />}
+  </Bundle>
+)
+const Contact = () => (
+  <Bundle load={()=>import('./contains/contact')}>
+    {(Contact) => <Contact />}
+  </Bundle>
+)
+const Issue = () => (
+  <Bundle load={()=>import("./contains/issue")}>
+    {(Issue) => <Issue  />}
+  </Bundle>
+)
+const Delit = () => (
+  <Bundle load={()=>import("./components/about/delit")}>
+    {(Delit) => <Delit  />}
+  </Bundle>
+)
 class App extends Component {
   render(){
     return <Router>
