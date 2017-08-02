@@ -1,3 +1,8 @@
+/*
+   1.提供代码拆分的bundle组件
+*/
+
+
 import React,{Component} from "react"
 
 export default class Bundle extends Component {

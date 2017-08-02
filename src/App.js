@@ -1,29 +1,40 @@
+/*
+    1.根据路由器实现代码拆分，按需加载，import()
+
+*/
+
+
 import React, { Component } from 'react';
 import {HashRouter as Router,Route} from "react-router-dom"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
-import Bundle from "./bundle"
 import Home from "./contains/home"
-const About = () => (
-  <Bundle load={()=>import('./contains/about')}>
-    {(About) => <About  />}
-  </Bundle>
-)
-const Contact = () => (
-  <Bundle load={()=>import('./contains/contact')}>
-    {(Contact) => <Contact />}
-  </Bundle>
-)
-const Issue = () => (
-  <Bundle load={()=>import("./contains/issue")}>
-    {(Issue) => <Issue  />}
-  </Bundle>
-)
-const Delit = () => (
-  <Bundle load={()=>import("./components/about/delit")}>
-    {(Delit) => <Delit  />}
-  </Bundle>
-)
+import Delit from "./components/about/delit"
+import Bundle from "./bundle"
+
+
+const About =()=>(
+   <Bundle load={()=>import('./contains/about')}>
+   {(About)=><About />}
+     
+   </Bundle>
+
+	)
+const Contact =()=>(
+   <Bundle load={()=>import('./contains/contact')}>
+   {(Contact)=><Contact />}
+     
+   </Bundle>
+
+	)
+const Issue =()=>(
+   <Bundle load={()=>import('./contains/issue')}>
+   {(Issue)=><Issue />}
+     
+   </Bundle>
+
+	)
+   
 class App extends Component {
   render(){
     return <Router>

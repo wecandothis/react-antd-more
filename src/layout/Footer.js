@@ -21,19 +21,19 @@ const Footer=()=>{
 
                  </li>
                  <li>
-                     <h2>相关链接</h2>
-                       <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
-                       <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
-                       <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
+                    
+                       <h3><a href={linkData[3].href} target="_blank">{linkData[3].name}</a></h3>
+                       <h3><a href={linkData[4].href}target="_blank">{linkData[4].name}</a></h3>
+                       <h3><a href={linkData[5].href} target="_blank">{linkData[5].name}</a></h3>
              
 
 
                  </li>
                   <li>
-                     <h2>相关链接</h2>
-                       <h3><a href={linkData[0].href} target="_blank">{linkData[0].name}</a></h3>
-                       <h3><a href={linkData[1].href}target="_blank">{linkData[1].name}</a></h3>
-                       <h3><a href={linkData[2].href} target="_blank">{linkData[2].name}</a></h3>
+                     
+                       <h3><a href={linkData[6].href} target="_blank">{linkData[6].name}</a></h3>
+                       <h3><a href={linkData[7].href}target="_blank">{linkData[7].name}</a></h3>
+                       <h3><a href={linkData[8].href} target="_blank">{linkData[8].name}</a></h3>
              
 
 

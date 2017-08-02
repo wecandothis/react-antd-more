@@ -7,9 +7,18 @@
 		"title":"I like you all the time "
 	},
 	"footer":{
-	    "linkData":[    {"name":"蚂蚁动效","href":"https://motion.ant.design"},
-					    {"name":"阿里图库","href":"https://motion.ant.design"},
-					    {"name":"蚂蚁组件","href":"https://motion.ant.design"}]
+	    "linkData":[    {"name":"蚂蚁动效","href":"https://motion.ant.design"},					    
+					    {"name":"蚂蚁组件","href":"https://ant.design/index-cn"},
+					    {"name":"有字库","href":"https://www.youziku.com/"},
+					    {"name":"知乎","href":"https://www.zhihu.com/"},
+					    {"name":"阿里图库","href":"http://www.iconfont.cn/"},
+					    {"name":"阿里图库","href":"http://www.iconfont.cn/"},
+					    {"name":"淘宝","href":"http://uland.taobao.com/"},
+					    {"name":"阿里图库","href":"http://www.iconfont.cn/"},
+					    {"name":"阿里图库","href":"http://www.iconfont.cn/"}
+
+
+					    ]
 
 	              }
 

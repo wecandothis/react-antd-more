@@ -6,7 +6,10 @@
 */
 
 import React,{Component} from "react"
+import QueueAnim from "rc-queue-anim"
+
 import {is} from "immutable"
+import {Link} from "react-router-dom"
 import li1 from "./../../images/li1.jpg"
 import li2 from "./../../images/li2.jpg"
 import li3 from "./../../images/li3.jpg"
@@ -16,6 +19,9 @@ import li6 from "./../../images/li6.jpg"
 import li7 from "./../../images/li7.jpg"
 import li8 from "./../../images/li8.jpg"
 import li9 from "./../../images/li9.jpg"
+import jiantouleft from "./../../images/jiantouleft.png"
+import jiantouright from "./../../images/jiantouright.png"
+
 import aboutdata from "./../../data/aboutdata.json"
 import "./delit.css"
 
@@ -55,6 +61,8 @@ export default class Delit extends Component{
           return false 
 
    }
+
+
   
 	render(){
 
@@ -68,13 +76,59 @@ export default class Delit extends Component{
 		{img:li7,index:7},
 		{img:li8,index:8},
 		{img:li9,index:9}]
-		const matchdata=this.props.match.params.id;
-		return <div>
-				   <span>
-                        <img src={dataArray[matchdata-1].img} alt=" " />
-				   </span>
-				   <h2>{this.state.aboutdata[matchdata].title}</h2>
-				   <p>{this.state.aboutdata[matchdata].content}</p>
-				</div>
-	}
+		const matchdata=parseInt(this.props.match.params.id)
+    let nextmatchdata=matchdata+1
+    let lastmatchdata=matchdata-1
+
+    if(matchdata===1){
+         lastmatchdata=1;
+    }else if(matchdata===9){
+        nextmatchdata=9
+    }else{
+
+    }
+    console.log(nextmatchdata);
+     console.log(lastmatchdata);
+
+     
+    
+
+		return     <QueueAnim className="delit-contain" key="delit-contain" type={"scale"}> 
+                                                             
+                  <img  className="delit-componenta-img" src={dataArray[matchdata-1].img} alt=" " />
+                
+                 <h3>{this.state.aboutdata[matchdata].title}</h3>  
+                 <ul>
+                    <li>{this.state.aboutdata[matchdata].content[0].say}</li>
+                    <li>{this.state.aboutdata[matchdata].content[1].say}</li>
+                    <li>{this.state.aboutdata[matchdata].content[2].say}</li>
+                    <li>{this.state.aboutdata[matchdata].content[3].say}</li>
+                    <li>{this.state.aboutdata[matchdata].content[4].say}</li>
+
+                 </ul>
+              
+               
+                 
+                  <h4>简介:{this.state.aboutdata[matchdata].other}</h4>
+
+                
+                 <Link to={`/about/${lastmatchdata}`}><img className="delit-componenta-jiantouleft"  src={jiantouleft} alt=" " /></Link>
+                 <Link to={`/about/${nextmatchdata}`}><img className="delit-componenta-jiantouright"  src={jiantouright} alt=" "/></Link>
+                
+                 </QueueAnim>
+
+
+
+
+               
+    }
+              
+   
+              
+
+
+		
+				        
+
+	
 }

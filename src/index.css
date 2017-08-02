@@ -4,7 +4,9 @@
 }
 body{
 	background:  linear-gradient(0deg, #faefee, #f4f4e4);
-     font-size: 18px;	
+     font-size: 18px;
+     font-family: helvetica, verdana, sans-serif;
+  
 }
 @media (max-width:760px){
 	body{

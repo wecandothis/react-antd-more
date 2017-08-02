@@ -1,5 +1,5 @@
 /*
-   1.本组件以为有Math.rando()，每次的值不一样就不需要优化。
+   1.本组件以为有Math.rando()，每次的值不一样就不需要优化了
 
 */
 
@@ -23,6 +23,7 @@ import aboutdata from "./../../data/aboutdata.json"
 export default class Componenta extends Component{
 
    getanimationdata=(e)=>{
+        
          const delay = Math.random()*1000 + 300;
          return { y: '+=30', opacity: 0, type: 'from', delay };
 
@@ -58,7 +59,7 @@ export default class Componenta extends Component{
         const childgorender=dataAarry.map(this.getChildtorender)
     	return (  <QueueAnim className="about-containa">
                      <TweenOne className="about-containa-text">
-                      <h3>this is demo </h3>
+                      <h3>光怪陆离的时光中闪光</h3>
                      </TweenOne>
 
                      <TweenOneGroup className="about-containa-ul" component="ul" enter={(e)=>{return this.getanimationdata(e)}} leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}>
