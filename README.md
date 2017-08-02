@@ -18,12 +18,12 @@
 > ie11+ 与其他主流浏览器以上支持
 
 ** 优化 **
-> 1.组件优化采用immutable.js。
-> 2.采用antd的按需加载，主要是rc-scroll-anim组件。
+> 1.组件优化采用immutable.js。<br />
+> 2.采用antd的按需加载，主要是rc-scroll-anim组件。<br />
 > 3.代码拆分，根据路由拆分为四个js文件，分开加载。
 
 ** 框架版本 **
-> 1.react v 15.6.1
-> 2.react-router v 4.1.1
-> 3. webpack v 2.6.1
+> 1.react v 15.6.1<br />
+> 2.react-router v 4.1.1<br />
+> 3. webpack v 2.6.1<br />
 > 详细在json文件
