@@ -51,7 +51,7 @@ export default class Componenta extends Component{
    render(){ 
 
    	   return (<OverPack className="home-containa" id="home-containa" key="home-containa" replay={true} playScale={[0.3,0.5]} component="div" style={{height:this.props.currentheight}}>
-                    <QueueAnim className="home-containa-text" type={['buttom','top']} delay={200} duration={500} key="home-containa-text">
+                    <QueueAnim className="home-containa-text"  type={['buttom','top']} delay={200} duration={500} key="home-containa-text">
                           <h2>
                             {this.state.homedata.componenta.title}
                           </h2>
@@ -65,7 +65,7 @@ export default class Componenta extends Component{
                              <li>{this.state.homedata.componenta.text[6].content}</li>
                              <li>{this.state.homedata.componenta.text[7].content}</li>                                                                                                                                                                                                                                                                </ul>
                     </QueueAnim>
-                    <TweenOne className="home-containa-img" animation={{y:"10",type:"to" ,duration:500, repeat:-1, yoyo:true}}>
+                    <TweenOne className="home-containa-img" key="home-containa-img" animation={{y:"10",type:"to" ,duration:500, repeat:-1, yoyo:true}}>
                      <img src={jiantou} alt="img" />
                     </TweenOne>
 

@@ -52,7 +52,7 @@ export default class Componentd extends Component{
 
               <QueueAnim  type={['left','right']}>
                  
-               <TweenOne className="home-containd-text" animation={{x:30,type:'from',opacity:0,duration:1000}}>
+               <TweenOne className="home-containd-text" key="home-containd-text" animation={{x:30,type:'from',opacity:0,duration:1000}}>
                     <h2>{this.state.homedata.componentd.title}</h2>
                   <p>{this.state.homedata.componentd.content} </p>
 

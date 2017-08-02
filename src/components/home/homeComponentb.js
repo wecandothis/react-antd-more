@@ -51,10 +51,10 @@ export default class Componentb extends Component{
                 <Link to="/about/3">
                 
                 <QueueAnim>
-                  <TweenOne className="home-containb-img" animation={{x:"-30",duration:1000,type:"from",opacity:0}}>
+                  <TweenOne className="home-containb-img" key="home-containb-img" animation={{x:"-30",duration:1000,type:"from",opacity:0}}>
                     <img src={li3} alt="img" />
                    </TweenOne >
-                   <TweenOne className="home-containb-text" animation={{x:"30",duration:1000,type:"from",opacity:0}}>
+                   <TweenOne className="home-containb-text" key="home-containb-text" animation={{x:"30",duration:1000,type:"from",opacity:0}}>
                      <h2>{this.state.homedata.componentb.title}</h2>
                     <p>{this.state.homedata.componentb.content}</p>
                    </TweenOne >

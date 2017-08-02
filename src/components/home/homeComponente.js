@@ -66,7 +66,7 @@ export default class Componente extends Component{
  const childerender=dataArray.map(this.getChildtorender)
   	return(<OverPack className="home-containe" key="home-containe" style={{height:this.props.currentheight}}>
              
-            <TweenOne className="home-containe-text"  animation={{ y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }} key="h1" reverseDelay={300}  >
+            <TweenOne className="home-containe-text"   animation={{ y: '+=30', opacity: 0, type: 'from', ease: 'easeOutQuad' }} key="h1" reverseDelay={300}  >
          
                 <h1>{this.state.homedata.componente.title}</h1>
                 
@@ -76,7 +76,7 @@ export default class Componente extends Component{
           </ul>
           
          
-          <TweenOne className="home-containe-button" component="button"  animation={{scale:1.1,repeat:-1,yoyo:true}} reverseDelay={300}>
+          <TweenOne className="home-containe-button" key="home-containe-button" component="button"  animation={{scale:1.1,repeat:-1,yoyo:true}} reverseDelay={300}>
              <Link to="/issue">more</Link>
 
           </TweenOne>

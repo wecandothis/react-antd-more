@@ -57,12 +57,12 @@ export default class Componenta extends Component{
     	{img:li9,index:"9"}
     	]
         const childgorender=dataAarry.map(this.getChildtorender)
-    	return (  <QueueAnim className="about-containa">
-                     <TweenOne className="about-containa-text">
+    	return (  <QueueAnim className="about-containa" key="about-containa">
+                     <TweenOne className="about-containa-text" key="about-containa-text">
                       <h3>光怪陆离的时光中闪光</h3>
                      </TweenOne>
 
-                     <TweenOneGroup className="about-containa-ul" component="ul" enter={(e)=>{return this.getanimationdata(e)}} leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}>
+                     <TweenOneGroup className="about-containa-ul" key="about-containa-ul" component="ul" enter={(e)=>{return this.getanimationdata(e)}} leave={{ y: '+=30', opacity: 0, ease: 'easeOutQuad' }}>
 
                        {childgorender}
 
